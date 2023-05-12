@@ -3,6 +3,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 First, run the development server:
+npm install
+
+Then, deploy the smart contract and enter the address in .env file
+npx hardhat compile
+npx hardhat run scripts/deploy.js --network hyperspace
+
 
 ```bash
 npm run dev
@@ -23,7 +29,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
-
+This project is based upon FVM network which is filecoin network to build web3 apps.
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
